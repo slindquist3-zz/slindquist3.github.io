@@ -14,15 +14,15 @@ const routing = (
           <Link to="/">Home</Link>
         </li>
         <li>
-          <Link to="/view1">View1</Link>
+          <Link to="/view1">About</Link>
         </li>
         <li>
-          <Link to="/view2">View2</Link>
+          <Link to="/view2">Work</Link>
         </li>
       </ul>
       <Route exact path="/" component={App} />
-      <Route path="/view1" component={View1} />
-      <Route path="/view2" component={View2} />
+      <Route path="/About" component={View1} />
+      <Route path="/Work" component={View2} />
     </nav>
   </Router>
 );
