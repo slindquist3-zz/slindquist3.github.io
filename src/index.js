@@ -2,8 +2,8 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import { Route, Link, BrowserRouter as Router } from 'react-router-dom'
 import App from './components/App'
-import View1 from './components/view1'
-import View2 from './components/view2'
+import Work from './components/work'
+import About from './components/about'
 import './index.scss';
 
 const routing = (
@@ -14,15 +14,15 @@ const routing = (
           <Link to="/">Home</Link>
         </li>
         <li>
-          <Link to="/view1">About</Link>
+          <Link to="/about">About</Link>
         </li>
         <li>
-          <Link to="/view2">Work</Link>
+          <Link to="/work">Work</Link>
         </li>
       </ul>
       <Route exact path="/" component={App} />
-      <Route path="/About" component={View1} />
-      <Route path="/Work" component={View2} />
+      <Route path="/About" component={About} />
+      <Route path="/Work" component={Work} />
     </nav>
   </Router>
 );

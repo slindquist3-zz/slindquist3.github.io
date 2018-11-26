@@ -6,7 +6,7 @@ class App extends React.Component {
 
     return (
       <div className="App">
-        <h1>This is a template for <span style={style}>Furthermore</span> microsites</h1>
+        <h1>This is a template.</h1>
       </div>
     )
   }
