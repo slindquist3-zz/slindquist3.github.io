@@ -1,13 +1,13 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import { Route, Link, BrowserRouter as Router } from 'react-router-dom'
+import { Route, HashRouter, Link } from 'react-router-dom';
 import App from './components/App'
 import Work from './components/work'
 import About from './components/about'
 import './index.scss';
 
 const routing = (
-  <Router>
+  <HashRouter basename={process.env.PUBLIC_URL}>
     <nav>
       <ul>
         <li>
@@ -24,7 +24,7 @@ const routing = (
       <Route path="/About" component={About} />
       <Route path="/Work" component={Work} />
     </nav>
-  </Router>
+  </HashRouter>
 );
 
 ReactDOM.render(routing, document.getElementById('root'))

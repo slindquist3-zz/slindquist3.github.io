@@ -1,7 +1,7 @@
 {
   "name": "scott-lindquist-portfolio",
   "version": "0.1.0",
-  "homepage":"http://slindquist3.github.io/scott-lindquist-portfolio",
+  "homepage": "http://slindquist3.github.io/scott-lindquist-portfolio",
   "private": true,
   "dependencies": {
     "@babel/core": "7.1.0",
